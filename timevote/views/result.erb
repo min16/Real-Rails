@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>수업시간 투표!</title>
+  </head>
+  <body>
+    <h1>결과 보기 페이지</h1>
+    <% TIMES.each do |id, text| %>
+      <p><%= text %> : <%= @votes[text] || 0 %></p>
+    <% end %>
+  </body>
+</html>
